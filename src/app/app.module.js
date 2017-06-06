@@ -10,12 +10,9 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
 //ComponentModules
-var maintenance_module_1 = require("./components/maintenance/maintenance.module");
-var appcatalog_module_1 = require("./components/application-catalog/appcatalog.module");
 //routing
 var app_routing_1 = require("./app.routing");
 //services
-var getauth_service_1 = require("./services/getauth.service");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -23,12 +20,13 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule, maintenance_module_1.MaintenanceModule,
-            appcatalog_module_1.AppCatalogModule, app_routing_1.AppRouting
+        imports: [
+            platform_browser_1.BrowserModule,
+            app_routing_1.AppRouting
         ],
         declarations: [app_component_1.AppComponent],
         bootstrap: [app_component_1.AppComponent],
-        providers: [getauth_service_1.GetAuthService]
+        providers: []
     })
 ], AppModule);
 exports.AppModule = AppModule;
