@@ -1,2 +1,2 @@
 @echo off
-xcopy "./src/app" "C:/Users/alverer/Documents/GitHub/ProtoSSvs/Solution/SkillSetApplication/SkillSetApplication/App"
+xcopy "./src/app" /E "C:/Users/alverer/Documents/GitHub/ProtoSSvs/Solution/SkillSetApplication/SkillSetApplication/App"
